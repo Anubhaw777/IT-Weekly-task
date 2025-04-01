@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #ccc;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            background: #ddd;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .clients {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .client-box {
+            padding: 15px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .client-logo {
+            width: 50px;
+            height: 50px;
+            background: #bbb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #ddd;
+        }
+        .logo-img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Who We Work With</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Who We Work With</h2>
+        <div class="clients">
+            <div class="client-box">
+                <div class="client-logo">Logo</div>
+                <div>
+                    <h3>Coca Cola</h3>
+                    <p><strong>Steve Jobs - CEO</strong></p>
+                    <p>Working with Rees... Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="client-box">
+                <div class="client-logo">Logo</div>
+                <div>
+                    <h3>Coca Cola</h3>
+                    <p><strong>Steve Jobs - CEO</strong></p>
+                    <p>Working with Rees... Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="client-box">
+                <div class="client-logo">Logo</div>
+                <div>
+                    <h3>Coca Cola</h3>
+                    <p><strong>Steve Jobs - CEO</strong></p>
+                    <p>Working with Rees... Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="client-box">
+                <div class="client-logo">Logo</div>
+                <div>
+                    <h3>Coca Cola</h3>
+                    <p><strong>Steve Jobs - CEO</strong></p>
+                    <p>Working with Rees... Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h4>Site Map</h4>
+            <p>Home | About Us | Services | Contact</p>
+        </div>
+        <div>
+            <h4>Client Testimonials</h4>
+            <p>"Great service! Highly recommended."</p>
+        </div>
+        <div>
+            <h4>Where are we?</h4>
+            <p>Calle de la Oficina 20, Madrid</p>
+            <img src="logo.png" alt="Company Logo" class="logo-img">
+        </div>
+    </div>
+</body>
+</html>
