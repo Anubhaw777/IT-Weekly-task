@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Input and Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        input, button {
+            padding: 5px;
+            margin: 5px;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        let arr = []; // Blank array
+
+        function addElement() {
+            let input = document.getElementById("inputValue").value;
+            if (input === "") {
+                alert("Please enter a value!");
+                return;
+            }
+            arr.push(input);
+            document.getElementById("inputValue").value = ""; // Clear input field
+        }
+
+        function displayElements() {
+            let displayArea = document.getElementById("display");
+            displayArea.innerHTML = ""; // Clear previous display
+            arr.forEach((value, index) => {
+                displayArea.innerHTML += `Element ${index} = ${value} <br>`;
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <h3>Sample screen:</h3>
+    <input type="text" id="inputValue" placeholder="Enter a number">
+    <button onclick="addElement()">Add</button>
+    <button onclick="displayElements()">Display</button>
+
+    <div id="display"></div>
+
+</body>
+</html>
